@@ -1,1 +1,2 @@
-export * from './Header/index';
+export * from './Header';
+export * from './Summary';

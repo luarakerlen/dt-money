@@ -1,3 +1,20 @@
 {
-  "transactions": []
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2023-05-12T03:21:40.286Z"
+    },
+    {
+      "id": 2,
+      "description": "Fluente",
+      "type": "outcome",
+      "category": "Diversão",
+      "price": 50,
+      "createdAt": "2023-05-12T03:32:58.070Z"
+    }
+  ]
 }

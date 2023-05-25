@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { Header, Summary } from '../../components';
 import { TransactionsContext } from '../../contexts/TransactionsContext';
+import { priceFormatter } from '../../utils/formatter';
 import { SearchForm } from './components';
 import {
 	PriceHighlight,
@@ -26,7 +27,8 @@ export function Transactions() {
 									<td width='50%'>{transaction.description}</td>
 									<td>
 										<PriceHighlight variant={transaction.type}>
-											{transaction.price}
+											{transaction.type === 'outcome' && '- '}
+											{priceFormatter.format(transaction.price)}
 										</PriceHighlight>
 									</td>
 									<td>{transaction.category}</td>
